@@ -1,0 +1,16 @@
+header {
+    nav {
+        background-color: $azure-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        
+        .navbar-links-container {
+            .nav-link {
+                padding: 10px;
+                text-decoration: none;
+            }
+        }
+    }
+}

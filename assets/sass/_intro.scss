@@ -1,0 +1,57 @@
+#intro {
+    display: flex;
+    flex-direction: column;
+    
+    .intro-img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 360px;
+            height: 360px;
+            padding: 20px;
+        } 
+    }
+
+    .intro-txt-btns {
+        padding: 10px;
+    }
+
+    .intro-buttons {
+        margin-top: 25px;
+        button {
+            padding: 20px 33px;
+            background-color: $blue-color;
+            color: $azure-color;
+            border-radius: 5px;
+            font-weight: map-get($font-weights , medium );
+            font-size: 18px;
+            font-family: $font-stack;
+            &:hover {
+                color: $blue-color;
+                background-color: $azure-color;
+            }
+        }
+    }
+}
+
+
+//media queries tablet and desktop 
+@media screen and (min-width: 576px) {
+    #intro {
+        margin-top: 76px;
+        flex-direction: row;
+        align-items: center;
+
+        .intro-img-container{    
+            img {
+                padding: 10px;
+            } 
+        }
+
+        .intro-txt-btns {
+            padding: 40px;
+        }
+    }
+}

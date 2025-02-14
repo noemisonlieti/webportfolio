@@ -1,0 +1,48 @@
+footer {
+    background-color: $azure-color;
+    min-height: 14vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+
+    .chevron-up{
+        width: 48px;
+        height: 48px;
+        background-color: $blue-color;
+        border-radius: 100px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        
+        &:hover {
+            border: 1px solid $blue-color;
+            background-color: $white-color;
+        }
+
+        .circle-blue-button-footer {
+            color: $white-color;
+     
+            &:hover {
+             color: $blue-color;
+            }
+        }
+    }  
+     
+}
+
+// media queries desktop
+@media screen and (min-width: 992px) {
+    footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+        .chevron-up {
+            margin-right: 60px;
+            margin-top: 15px;
+        }
+
+    }    
+}

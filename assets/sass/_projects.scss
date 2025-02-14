@@ -1,0 +1,44 @@
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 58px;
+    margin-bottom: 20px;
+
+    .projects-container {
+        background-image: url(/assets/media/img/projects-background.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 76px;
+        border-radius: 20px;
+
+        .cards-container {
+            margin-top: 25px;
+        }
+    }
+}
+
+
+//media queries tablet and desktop 
+@media screen and (min-width: 576px) {
+
+    #projects {
+        .projects-container {
+            justify-content: center;
+            width: 100%;
+            margin: 0 60px;
+
+            .cards-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                margin: 25px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+%ProjectsCard {
+    margin-top: 20px;
+    width: 236px;
+    height: 400px;
+    background: linear-gradient(rgba(0,114,171,0.18) 35%, rgba(255,255,255,0.10));
+    filter: drop-shadow(0px 12px 46px rgba(255, 255, 255,0.25));
+    box-shadow: 10px 10px 20px rgba(8, 8, 8,1);
+    backdrop-filter: blur(3px);
+
+    border-radius: 50px;
+    border: 0.5px solid rgba(255, 255, 255);
+}
+
+// HOMEPAGE
+.card {
+    @extend %ProjectsCard;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+// PROJECTS PAGES
+.prj-txt-card-container {
+    @extend %ProjectsCard;
+
+    width: fit-content;
+    height: fit-content;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+
+//media queries tablet and desktop 
+@media screen and (min-width: 576px) {
+    .prj-txt-card-container{
+        margin-right: 60px;
+    }
+}

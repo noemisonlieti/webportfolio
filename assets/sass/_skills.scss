@@ -1,0 +1,45 @@
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 58px;
+
+    .skills-container {
+        background-color: $azure-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 76px;
+        border-radius: 20px;
+
+        .skills-img-container {
+            .html-container, .css-container, .sass-container, .wordpress-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+
+//media queries tablet and desktop 
+@media screen and (min-width: 576px) {
+
+    #skills {
+        .skills-container {
+            justify-content: center;
+            width: 100%;
+            margin: 0 60px;
+
+            .skills-img-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                margin: 25px 0;
+            }
+        }
+    }
+}

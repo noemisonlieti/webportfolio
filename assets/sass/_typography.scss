@@ -1,0 +1,99 @@
+//GENERAL
+
+// text color
+h1, h2 , h3 , p, .nav-link {
+    color: $blue-color;
+}
+
+// text alignment 
+p {
+    text-align: justify;
+}
+
+// font-weight
+h1, h2 , h3 , .nav-link {
+    font-weight: map-get($font-weights , bold );
+}
+
+p {
+    font-weight: map-get($font-weights , medium );
+}
+
+// font-size
+h1, h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+}
+
+// footer
+.footer-p{
+    font-weight: map-get($font-weights , regular );
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+// HOMEPAGE
+.intro-title {
+    margin-bottom: 20px;
+}
+
+.projects-title {
+    color: $azure-color;
+}
+
+.prj-card-title {
+    margin-top: 38px;
+    color: $azure-color;
+    font-size: 30px;
+    font-weight: map-get($font-weights , medium );
+    text-decoration: underline;
+}
+
+.card > p {
+    margin-top: 38px;
+    padding: 0 8px;
+    color: $white-color;
+} 
+
+//PROJECTS PAGES
+
+.prj-title {
+    color: $azure-color;
+    text-decoration: underline;
+}
+
+.prj-txt-title {
+    color: $azure-color;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.prj-txt-p {
+    color: $white-color;
+}
+
+
+// media queries tablet
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    h1, h2 {
+        font-size: 44px; 
+    } 
+}
+
+// media queries desktop
+@media only screen and (min-width: 992px) {
+    h1, h2 {
+        font-size: 64px;
+    }
+    
+    .footer-p {
+        margin-left: 60px;
+    }
+}
